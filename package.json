@@ -1,0 +1,12 @@
+{
+  "name": "nsignal",
+  "description": "Support for a kind of signal mechanism that specific signal is emitted when an object of mongoose model is created, updated, or deleted.",
+  "author": "Chenxiong Qi <qcxhome@gmail.com>",
+  "license": "MIT",
+  "version": "0.0.1",
+  "keywords": ["signal", "model"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkdchen/nsignal.git"
+  }
+}
