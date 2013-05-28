@@ -4,12 +4,27 @@
   "author": "Chenxiong Qi <qcxhome@gmail.com>",
   "license": "MIT",
   "version": "0.0.1",
-  "keywords": ["signal", "model"],
+  "keywords": [
+    "signal",
+    "model"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/tkdchen/nsignal.git"
   },
   "dependencies": {
     "async": "0.2.x"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "729f3c5777a0ac065e6790ffaabede2204cf2c25",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "devDependencies": {
+    "mongoose": "*"
+  },
+  "scripts": {
+    "test": "mocha tests/signal-test.js"
   }
 }
