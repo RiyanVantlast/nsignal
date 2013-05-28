@@ -34,5 +34,5 @@ where savedObject is the object of SomeModel and just be saved. As an example,
 the args passes instance only, which has the same value with the first argument
 of method send. Of course, you can pass any arguments through the second
 argument, as long as they satisfy the arguments specified while defining
-``post\_save.``
+``post_save.``
 
