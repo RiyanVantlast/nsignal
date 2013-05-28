@@ -8,5 +8,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/tkdchen/nsignal.git"
+  },
+  "dependencies": {
+    "async": "0.2.x"
   }
 }
