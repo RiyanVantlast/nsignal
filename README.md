@@ -9,7 +9,7 @@ has change, like created, updated, or deleted.
 Define your signal by initialzing an object from Signal class.
 
     var Signal = require("nsignal");
-    post_save = new Sigal({providing_args: ["instance"]});
+    var post_save = new Signal({providing_args: ["instance"]});
 
 Register signal receivers in your proper module.
 
@@ -36,3 +36,11 @@ of method send. Of course, you can pass any arguments through the second
 argument, as long as they satisfy the arguments specified while defining
 ``post_save.``
 
+If you want to handle the result, pass a callback function as the last argument.
+
+    post_save.send(savedObject, {"instance": savedObject}, function(err, results) {
+        console.log(">>>", results);
+    });
+
+where argument err will be always null, and results is an object of Array
+containing each receiver's result and potential error object.
